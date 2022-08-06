@@ -1,0 +1,14 @@
+- Dificuldade
+    -Atualização do Plugin
+    -Tipagem dos widgets 
+    -type 'Null' is not a subtype of type 'String' of 'data'
+
+
+- A resolver
+    - videos repetidos
+        bloc.inSearch.add(DataSearch().query); - HOME/Linha 53
+    - Entender melhor como funciona o BLoC
+
+    "https://www.googleapis.com/youtube/v3/search?part=snippet&q=$search&type=video&key=$API_KEY&maxResults=10"
+    "https://www.googleapis.com/youtube/v3/search?part=snippet&q=$_search&type=video&key=$API_KEY&maxResults=10&pageToken=$_nextToken"
+    "http://suggestqueries.google.com/complete/search?hl=en&ds=yt&client=youtube&hjson=t&cp=1&q=$search&format=5&alt=json"
